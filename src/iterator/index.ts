@@ -1,5 +1,5 @@
-import Item from "./item";
-import Arr from "./array";
+import Item from "./models/item.model";
+import Arr from "./iterators/array";
 
 const items = [
   new Item("쿠쿠다스", 2500),

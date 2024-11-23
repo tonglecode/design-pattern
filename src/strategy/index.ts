@@ -1,6 +1,6 @@
-import GaussSumStrategy from "./GaussSumStrategy";
-import LoopStrategy from "./LoopSumStrategy";
-import SumPrint from "./SumPrinter";
+import SumPrint from "./services/SumPrinter";
+import GaussSumStrategy from "./strategies/GaussSumStrategy";
+import LoopStrategy from "./strategies/LoopSumStrategy";
 
 const printer = new SumPrint();
 

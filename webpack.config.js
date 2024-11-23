@@ -6,7 +6,15 @@ module.exports = {
   // entry: "./src/index.ts",
   //   entry: "./src/iterator/index.ts",
   //   entry: "./src/strategy/index.ts",
-  entry: "./src/template/index.ts",
+  //   entry: "./src/template/index.ts",
+  //   entry: "./src/adapter/index.ts",
+  //   entry: "./src/bridge/index.ts",
+  //   entry: "./src/decorator/index.ts",
+  //   entry: "./src/singleton/index.ts",
+  //   entry: "./src/flyweight/index.ts",
+  //   entry: "./src/composite/index.ts",
+  entry: "./src/factory/index.ts",
+
   devtool: "inline-source-map",
   module: {
     rules: [

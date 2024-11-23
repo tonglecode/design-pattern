@@ -1,6 +1,7 @@
 import Article from "./Article";
-import EditableDisplayArticle from "./EditableDisplayArticle";
-import SimpleDisplayArticle from "./SimpleDisplayArticle";
+import EditableDisplayArticle from "./components/display/EditableDisplayArticle";
+import SimpleDisplayArticle from "./components/display/SimpleDisplayArticle";
+
 import "./style.css";
 
 const content = document.createElement("div");

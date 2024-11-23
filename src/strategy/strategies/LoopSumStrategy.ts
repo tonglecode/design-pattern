@@ -1,4 +1,4 @@
-import SumStrategy from "./SumStrategy";
+import SumStrategy from "../interfaces/SumStrategy.interface";
 
 export default class LoopStrategy implements SumStrategy {
   get(N: number): number {

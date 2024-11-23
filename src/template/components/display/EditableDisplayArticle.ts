@@ -1,5 +1,5 @@
-import Article from "./Article";
-import DisplayArticleTemplate from "./DisplayArticleTemplate";
+import Article from "../../Article";
+import DisplayArticleTemplate from "../abstracts/DisplayArticleTemplate";
 
 export default class EditableDisplayArticle extends DisplayArticleTemplate {
   protected titleHtml(): string {

@@ -1,4 +1,4 @@
-import Article from "./Article";
+import Article from "../../Article";
 
 export default abstract class DisplayArticleTemplate {
   //추상클래스로 abstract를 입력한다.

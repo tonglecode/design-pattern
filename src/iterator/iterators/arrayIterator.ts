@@ -1,6 +1,6 @@
 import Arr from "./array";
-import Item from "./item";
-import Iterator from "./interface/iterator";
+import Item from "../models/item.model";
+import Iterator from "../interfaces/iterator.interface";
 
 class ArrayIterator implements Iterator<Item> {
   private index: number;
