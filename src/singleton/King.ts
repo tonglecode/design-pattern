@@ -1,11 +1,11 @@
 export default class King {
   private constructor() {}
 
-  private static instance: King | undefined;
+  private static _instance: King | undefined;
 
   static getInstanc(): King {
-    if (this.instance === undefined) this.instance = new King();
-    return this.instance;
+    if (this._instance === undefined) this._instance = new King();
+    return this._instance;
   }
 
   sayHello() {

@@ -2,18 +2,18 @@ import Item from "./abstracts/Item";
 
 export default class Strings extends Item {
   getLineCount(): number {
-    return this.data.length;
+    return this._data.length;
   }
   getLength(idx: number): number {
-    if (this.data[idx]) {
-      return this.data[idx].length;
+    if (this._data[idx]) {
+      return this._data[idx].length;
     } else {
       return 0;
     }
   }
   getMaxLength(): number {
     let maxLength = 0;
-    this.data.forEach((item) => {
+    this._data.forEach((item) => {
       if (maxLength < item.length) {
         maxLength = item.length;
       }
@@ -21,15 +21,15 @@ export default class Strings extends Item {
     return maxLength;
   }
   getString(idx: number): string {
-    return this.data[idx];
+    return this._data[idx];
   }
-  private data = new Array<string>();
+  private _data = new Array<string>();
 
   constructor() {
     super();
   }
 
   add(str: string): void {
-    this.data.push(str);
+    this._data.push(str);
   }
 }

@@ -13,13 +13,13 @@ export default class SideDecorator extends Decorator {
   }
   getString(idx: number): string {
     return `<span style='color:gray'>${
-      this.ch
+      this._ch
     }</span><span>${this.targetItem.getString(
       idx
-    )}</span><span style='color:gray'>${this.ch}</span>`;
+    )}</span><span style='color:gray'>${this._ch}</span>`;
   }
 
-  constructor(targatItem: Item, private ch: string) {
+  constructor(targatItem: Item, private _ch: string) {
     super(targatItem);
   }
 }

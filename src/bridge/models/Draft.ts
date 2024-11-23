@@ -2,19 +2,19 @@ import Display from "../interfaces/Display.interface";
 
 export default class Draft {
   constructor(
-    private title: string,
-    private auther: string,
-    private content: string[]
+    private _title: string,
+    private _auther: string,
+    private _content: string[]
   ) {}
 
   getTitle() {
-    return this.title;
+    return this._title;
   }
   getAuther() {
-    return this.auther;
+    return this._auther;
   }
   getContent() {
-    return this.content;
+    return this._content;
   }
 
   print(display: Display): void {

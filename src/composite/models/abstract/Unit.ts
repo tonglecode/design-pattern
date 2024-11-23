@@ -1,8 +1,8 @@
 export default abstract class Unit {
-  constructor(private name: string) {}
+  constructor(private _name: string) {}
 
   getName(): string {
-    return this.name;
+    return this._name;
   }
 
   abstract getSize(): number;

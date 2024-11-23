@@ -1,24 +1,24 @@
 import Unit from "./abstract/Unit";
 
 export default class Folder extends Unit {
-  private units: Array<Unit> = [];
+  private _units: Array<Unit> = [];
 
   constructor(name: string) {
     super(name);
   }
 
   getSize(): number {
-    return this.units.reduce(
+    return this._units.reduce(
       (accumulator, unit) => accumulator + unit.getSize(),
       0
     );
   }
 
   add(unit: Unit) {
-    this.units.push(unit);
+    this._units.push(unit);
   }
 
-  private createUnit(unit: Unit, dom: Element) {
+  private _createUnit(unit: Unit, dom: Element) {
     const domUnit = document.createElement("div");
     domUnit.classList.add("unit");
     domUnit.innerHTML = `<div><span>${unit.getName()}</span><span>${unit.getSize()}</span></div>`;
@@ -27,16 +27,16 @@ export default class Folder extends Unit {
   }
 
   list(dom: Element) {
-    const domUnit = this.createUnit(this, dom);
+    const domUnit = this._createUnit(this, dom);
     const bFolder = this instanceof Folder;
 
     if (bFolder) {
       domUnit.classList.add("folder");
-      this.units.forEach((unit) => {
+      this._units.forEach((unit) => {
         if (unit instanceof Folder) {
           unit.list(domUnit);
         } else {
-          this.createUnit(unit, domUnit);
+          this._createUnit(unit, domUnit);
         }
       });
     }

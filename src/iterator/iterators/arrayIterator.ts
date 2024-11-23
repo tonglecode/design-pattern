@@ -3,18 +3,18 @@ import Item from "../models/item.model";
 import Iterator from "../interfaces/iterator.interface";
 
 class ArrayIterator implements Iterator<Item> {
-  private index: number;
+  private _index: number;
 
-  constructor(private array: Arr) {
-    this.index = -1;
+  constructor(private _array: Arr) {
+    this._index = -1;
   }
 
   next(): boolean {
-    this.index++;
-    return this.index < this.array.count;
+    this._index++;
+    return this._index < this._array.count;
   }
   current(): Item {
-    return this.array.getItem(this.index);
+    return this._array.getItem(this._index);
   }
 }
 

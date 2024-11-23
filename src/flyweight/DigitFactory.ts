@@ -1,7 +1,7 @@
 import Digit from "./models/Digit";
 
 export default class DigitFactory {
-  private pool: Array<Digit | null> = [
+  private _pool: Array<Digit | null> = [
     null,
     null,
     null,
@@ -15,11 +15,11 @@ export default class DigitFactory {
   ];
 
   getDigit(num: number): Digit {
-    if (!this.pool[num]) {
-      this.pool[num] = new Digit(
+    if (!this._pool[num]) {
+      this._pool[num] = new Digit(
         `./flyweight/data/originalPatterns/${num}.json`
       );
     }
-    return this.pool[num];
+    return this._pool[num];
   }
 }
