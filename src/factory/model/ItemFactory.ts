@@ -36,7 +36,7 @@ export default class ItemFactory extends Factory {
     this._repositroy.set(ItemTypes.POTION, new ItemCount(10));
   }
 
-  protected _isCreatable(name: ItemNameType): boolean {
+  protected isCreatable(name: ItemNameType): boolean {
     const itemCount = this._repositroy.get(name);
     // null 체크 추가
     if (!itemCount) {
@@ -45,7 +45,7 @@ export default class ItemFactory extends Factory {
     }
     return itemCount.isCreatable();
   }
-  protected _createItem(name: ItemNameType): Item {
+  protected createItem(name: ItemNameType): Item {
     let result: Item = null;
 
     if (name === ItemTypes.GUN) {
@@ -57,7 +57,7 @@ export default class ItemFactory extends Factory {
     }
     return result;
   }
-  protected _postprocessItem(name: ItemNameType): void {
+  protected postprocessItem(name: ItemNameType): void {
     return this._repositroy.get(name).increaseCount();
   }
 }
