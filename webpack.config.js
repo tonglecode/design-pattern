@@ -15,7 +15,14 @@ module.exports = {
   //   entry: "./src/composite/index.ts",
   //   entry: "./src/factory/index.ts",
   //   entry: "./src/observer/index.ts",
-  entry: "./src/mediator/index.ts",
+  //   entry: "./src/mediator/index.ts",
+  //   entry: "./src/Learn-designPattern/mediator-chatRoom/index.ts",
+  //   entry: "./src/memento/index.ts",
+  //   entry: "./src/proxy/index.ts",
+  //   entry: "./src/Learn-designPattern/proxy/virtualProxy/index.ts",
+  //   entry: "./src/chain-of-responsibility/index.ts",
+  //   entry: "./src/prototype/index.ts",
+  entry: "./src/facade/index.ts",
 
   devtool: "inline-source-map",
   module: {
