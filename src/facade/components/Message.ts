@@ -1,4 +1,4 @@
-import Row from "./Row";
+import Row from "../models/Row";
 
 export default class Message {
   constructor(private row: Row) {}

@@ -1,6 +1,6 @@
-import { DomainHandler } from "./model/DomainHandler";
-import { PortHandle } from "./model/PortHandler";
-import { ProtocolHandler } from "./model/ProtocolHandler";
+import { DomainHandler } from "./models/DomainHandler";
+import { PortHandle } from "./models/PortHandler";
+import { ProtocolHandler } from "./models/ProtocolHandler";
 import "./style.css";
 
 document.body.innerHTML += `<div class='result'>

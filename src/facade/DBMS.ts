@@ -1,4 +1,4 @@
-import Row from "./Row";
+import Row from "./models/Row";
 
 export default class DBMS {
   private db = new Map<string, Row>();

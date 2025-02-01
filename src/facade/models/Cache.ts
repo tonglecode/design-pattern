@@ -8,6 +8,7 @@ export default class Cache {
   }
 
   get(name: string): Row {
+    const row = this.cache.get(name);
     return this.cache.get(name);
   }
 }

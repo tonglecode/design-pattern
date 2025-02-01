@@ -1,4 +1,4 @@
-import ItemFactory from "./model/ItemFactory";
+import ItemFactory from "./models/ItemFactory";
 import "./style.css";
 import { ItemNameType } from "./types/ItemNameType";
 
